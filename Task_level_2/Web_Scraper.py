@@ -21,6 +21,7 @@ class ShadowFoxSpider(scrapy.Spider):
         print("Website Title :")
         title = response.css("title::text").get()
         print(title)
+        scraped_data.append([title])
 
         print("\nHeadings Found :")
 
